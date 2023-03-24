@@ -1,9 +1,9 @@
 {
-    "Identifier": "",
-    "Slug": "",
-    "Status": "",
-    "Title": "",
-    "Description": "",
+    "Identifier": "eos8lok",
+    "Slug": "s2dv-hbv",
+    "Status": "In progress",
+    "Title": "Inhibition of Hepatits B virus",
+    "Description": "The model adopts a natural language processing technique to analyze compound SMILES strings, enabling an accurate representation of the relationship between compounds and their substructures. This technique helps the model predict inhibitory effects on HBV, verified by wet-lab experiments. This model provides a new perspective on the prediction of compound properties for anti-HBV drugs to improve hepatitis B diagnosis and human health in the future.",
     "Mode": "",
     "Task": [],
     "Input": [],
@@ -12,8 +12,10 @@
     "Output Type": [],
     "Output Shape": "",
     "Interpretation": "",
-    "Tag": [],
-    "Publication": "",
-    "Source Code": "",
-    "License": ""
+    "Tag": [
+        "ChEMBL"
+    ],
+    "Publication": "https://pubmed.ncbi.nlm.nih.gov/35062019/",
+    "Source Code": "https://github.com/NTU-MedAI/S2DV",
+    "License": "Apache-2.0"
 }
