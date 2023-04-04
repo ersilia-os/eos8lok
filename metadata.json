@@ -3,7 +3,7 @@
     "Slug": "s2dv-hbv",
     "Status": "In progress",
     "Title": "Inhibition of Hepatits B virus",
-    "Description": "The model adopts a natural language processing technique to analyze compound SMILES strings, enabling an accurate representation of the relationship between compounds and their substructures. This technique helps the model predict inhibitory effects on HBV, verified by wet-lab experiments. This model provides a new perspective on the prediction of compound properties for anti-HBV drugs to improve hepatitis B diagnosis and human health in the future.",
+    "Description": "The model uses ord2vec, a natural language processing technique to represent SMILES strings. The model was trained on over <4000 small molecules with associated experimental HBV inhibition data (IC50) to classify compounds as HBV inhibitors (IC50 <= 1 uM) or non-inhibitors. Data was gathered from the public repository ChEMBL.",
     "Mode": "Pretrained",
     "Task": ["Classification"],
     "Input": ["Compound"],
@@ -11,8 +11,10 @@
     "Output": ["Experimental value"],
     "Output Type": ["Float"],
     "Output Shape": "Single",
-    "Interpretation": "This model receives smiles as input and returns as output the probability of the inhibitory effect of compounds on Hepatitis B Virus. ",
+    "Interpretation": "Probability of inhibition of HBV",
     "Tag": [
+        "Antiviral activity",
+        "IC50",
         "ChEMBL"
     ],
     "Publication": "https://pubmed.ncbi.nlm.nih.gov/35062019/",
