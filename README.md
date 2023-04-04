@@ -1,6 +1,6 @@
 # Inhibition of Hepatits B virus
 
-The model uses ord2vec, a natural language processing technique to represent SMILES strings. The model was trained on over <4000 small molecules with associated experimental HBV inhibition data (IC50) to classify compounds as HBV inhibitors (IC50 <= 1 uM) or non-inhibitors. Data was gathered from the public repository ChEMBL.
+The model uses Word2Vec, a natural language processing technique to represent SMILES strings. The model was trained on over <4000 small molecules with associated experimental HBV inhibition data (IC50) to classify compounds as HBV inhibitors (IC50 <= 1 uM) or non-inhibitors. Data was gathered from the public repository ChEMBL.
 
 ## Identifiers
 
@@ -15,7 +15,7 @@ The model uses ord2vec, a natural language processing technique to represent SMI
 * Output: `Experimental value`
 * Output Type: `Float`
 * Output Shape: `Single`
-* Interpretation: Probability of inhibition of HBV
+* Interpretation: Probability of inhibition of HBV (IC50 < 1uM)
 
 ## References
 
