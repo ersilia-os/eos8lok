@@ -1,0 +1,2 @@
+name,type,direction,description
+hbv_prob,float,high,Probability that a compound inhibits the Hepatitis B virus
