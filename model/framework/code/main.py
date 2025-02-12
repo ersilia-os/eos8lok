@@ -47,7 +47,7 @@ def main(smiles):
 
 with open(output_file, "w") as f:
     writer = csv.writer(f)
-    writer.writerow(["HBV_prob"])  # header
+    writer.writerow(["hbv_prob"])  # header
 
 with open(input_file, "r") as f:
     reader = csv.reader(f)
