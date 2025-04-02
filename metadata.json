@@ -1,50 +1,50 @@
 {
-    "Identifier": "eos8lok",
-    "Slug": "s2dv-hbv",
-    "Status": "Ready",
-    "Title": "Inhibition of Hepatits B virus",
-    "Description": "The model uses Word2Vec, a natural language processing technique to represent SMILES strings. The model was trained on over <4000 small molecules with associated experimental HBV inhibition data (IC50) to classify compounds as HBV inhibitors (IC50 <= 1 uM) or non-inhibitors. Data was gathered from the public repository ChEMBL.\n",
-    "Source": "Local",
-    "Source Type": "External",
-    "Input": [
-        "Compound"
-    ],
-    "Input Shape": "Single",
-    "Input Dimension": 1,
-    "Task": "Annotation",
-    "Subtask": "Activity prediction",
-    "Biomedical Area": [
-        "Hepatitis B"
-    ],
-    "Target Organism": [
-        "Hepatitis B virus"
-    ],
-    "Output": [
-        "Probability"
-    ],
-    "Output Dimension": 1,
-    "Output Consistency": "Fixed",
-    "Interpretation": "Probability of inhibition of HBV (IC50 < 1uM)",
-    "Tag": [
-        "Antiviral activity",
-        "IC50",
-        "HBV",
-        "ChEMBL"
-    ],
-    "Publication": "https://pubmed.ncbi.nlm.nih.gov/35062019/",
-    "Publication Type": "Peer reviewed",
-    "Publication Year": 2022,
-    "Source Code": "https://github.com/NTU-MedAI/S2DV",
-    "License": "Apache-2.0",
-    "Contributor": "emmakodes",
-    "Incorporation Date": "2023-03-24",
-    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos8lok",
-    "Docker Architecture": [
-        "AMD64",
-        "ARM64"
-    ],
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8lok.zip",
-    "Deployment": [
-        "Local"
-    ]
+  "Identifier": "eos8lok",
+  "Slug": "s2dv-hbv",
+  "Status": "Ready",
+  "Title": "Inhibition of Hepatits B virus",
+  "Description": "The model uses Word2Vec, a natural language processing technique to represent SMILES strings. The model was trained on over <4000 small molecules with associated experimental HBV inhibition data (IC50) to classify compounds as HBV inhibitors (IC50 <= 1 uM) or non-inhibitors. Data was gathered from the public repository ChEMBL.\n",
+  "Source": "Local",
+  "Source Type": "External",
+  "Input": [
+    "Compound"
+  ],
+  "Input Shape": "Single",
+  "Input Dimension": 1,
+  "Task": "Annotation",
+  "Subtask": "Activity prediction",
+  "Biomedical Area": [
+    "Hepatitis B"
+  ],
+  "Target Organism": [
+    "Hepatitis B virus"
+  ],
+  "Output": [
+    "Probability"
+  ],
+  "Output Dimension": 1,
+  "Output Consistency": "Fixed",
+  "Interpretation": "Probability of inhibition of HBV (IC50 < 1uM)",
+  "Tag": [
+    "Antiviral activity",
+    "IC50",
+    "HBV",
+    "ChEMBL"
+  ],
+  "Publication": "https://pubmed.ncbi.nlm.nih.gov/35062019/",
+  "Publication Type": "Peer reviewed",
+  "Publication Year": 2022,
+  "Source Code": "https://github.com/NTU-MedAI/S2DV",
+  "License": "Apache-2.0",
+  "Contributor": "emmakodes",
+  "Incorporation Date": "2023-03-24",
+  "DockerHub": "https://hub.docker.com/r/ersiliaos/eos8lok",
+  "Docker Architecture": [
+    "AMD64",
+    "ARM64"
+  ],
+  "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8lok.zip",
+  "Deployment": [
+    "Local"
+  ]
 }
