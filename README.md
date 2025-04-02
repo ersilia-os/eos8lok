@@ -2,44 +2,78 @@
 
 The model uses Word2Vec, a natural language processing technique to represent SMILES strings. The model was trained on over <4000 small molecules with associated experimental HBV inhibition data (IC50) to classify compounds as HBV inhibitors (IC50 <= 1 uM) or non-inhibitors. Data was gathered from the public repository ChEMBL.
 
-## Identifiers
+This model was incorporated on 2023-03-24.
 
-* EOS model ID: `eos8lok`
-* Slug: `s2dv-hbv`
+## Information
+### Identifiers
+- **Ersilia Identifier:** `eos8lok`
+- **Slug:** `s2dv-hbv`
 
-## Characteristics
+### Domain
+- **Task:** `Annotation`
+- **Subtask:** `Activity prediction`
+- **Biomedical Area:** `Hepatitis B`
+- **Target Organism:** `Hepatitis B virus`
+- **Tags:** `Antiviral activity`, `IC50`, `HBV`, `ChEMBL`
 
-* Input: `Compound`
-* Input Shape: `Single`
-* Task: `Classification`
-* Output: `Experimental value`
-* Output Type: `Float`
-* Output Shape: `Single`
-* Interpretation: Probability of inhibition of HBV (IC50 < 1uM)
+### Input
+- **Input:** `Compound`
+- **Input Dimension:** `1`
 
-## References
+### Output
+- **Output Dimension:** `1`
+- **Output Consistency:** `Fixed`
+- **Interpretation:** Probability of inhibition of HBV (IC50 < 1uM)
 
-* [Publication](https://pubmed.ncbi.nlm.nih.gov/35062019/)
-* [Source Code](https://github.com/NTU-MedAI/S2DV)
-* Ersilia contributor: [emmakodes](https://github.com/emmakodes)
+Below are the **Output Columns** of the model:
+| Name | Type | Direction | Description |
+|------|------|-----------|-------------|
+| hbv_prob | float | high | Probability that a compound inhibits the Hepatitis B virus |
 
-## Ersilia model URLs
-* [GitHub](https://github.com/ersilia-os/eos8lok)
-* [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8lok.zip)
-* [DockerHub](https://hub.docker.com/r/ersiliaos/eos8lok) (AMD64, ARM64)
 
-## Citation
+### Source and Deployment
+- **Source:** `Local`
+- **Source Type:** `External`
+- **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos8lok](https://hub.docker.com/r/ersiliaos/eos8lok)
+- **Docker Architecture:** `AMD64`, `ARM64`
+- **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8lok.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8lok.zip)
 
-If you use this model, please cite the [original authors](https://pubmed.ncbi.nlm.nih.gov/35062019/) of the model and the [Ersilia Model Hub](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff).
+### Resource Consumption
 
-## License
 
-This package is licensed under a GPL-3.0 license. The model contained within this package is licensed under a Apache-2.0 license.
+### References
+- **Source Code**: [https://github.com/NTU-MedAI/S2DV](https://github.com/NTU-MedAI/S2DV)
+- **Publication**: [https://pubmed.ncbi.nlm.nih.gov/35062019/](https://pubmed.ncbi.nlm.nih.gov/35062019/)
+- **Publication Type:** `Peer reviewed`
+- **Publication Year:** `2022`
+- **Ersilia Contributor:** [emmakodes](https://github.com/emmakodes)
 
-Notice: Ersilia grants access to these models 'as is' provided by the original authors, please refer to the original code repository and/or publication if you use the model in your research.
+### License
+This package is licensed under a [GPL-3.0](https://github.com/ersilia-os/ersilia/blob/master/LICENSE) license. The model contained within this package is licensed under a [Apache-2.0](LICENSE) license.
 
-## About Us
+**Notice**: Ersilia grants access to models _as is_, directly from the original authors, please refer to the original code repository and/or publication if you use the model in your research.
 
-The [Ersilia Open Source Initiative](https://ersilia.io) is a Non Profit Organization ([1192266](https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5170657/full-print)) with the mission is to equip labs, universities and clinics in LMIC with AI/ML tools for infectious disease research.
 
-[Help us](https://www.ersilia.io/donate) achieve our mission!
+## Use
+To use this model locally, you need to have the [Ersilia CLI](https://github.com/ersilia-os/ersilia) installed.
+The model can be **fetched** using the following command:
+```bash
+# fetch model from the Ersilia Model Hub
+ersilia fetch eos8lok
+```
+Then, you can **serve**, **run** and **close** the model as follows:
+```bash
+# serve the model
+ersilia serve eos8lok
+# generate an example file
+ersilia example -n 3 -f my_input.csv
+# run the model
+ersilia run -i my_input.csv -o my_output.csv
+# close the model
+ersilia close
+```
+
+## About Ersilia
+The [Ersilia Open Source Initiative](https://ersilia.io) is a tech non-profit organization fueling sustainable research in the Global South.
+Please [cite](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff) the Ersilia Model Hub if you've found this model to be useful. Always [let us know](https://github.com/ersilia-os/ersilia/issues) if you experience any issues while trying to run it.
+If you want to contribute to our mission, consider [donating](https://www.ersilia.io/donate) to Ersilia!
