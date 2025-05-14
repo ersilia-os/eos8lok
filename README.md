@@ -39,7 +39,14 @@ Below are the **Output Columns** of the model:
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8lok.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8lok.zip)
 
 ### Resource Consumption
+- **Model Size (Mb):** `61`
+- **Environment Size (Mb):** `1135`
+- **Image Size (Mb):** `1278.13`
 
+**Computational Performance (seconds):**
+- 10 inputs: `31.76`
+- 100 inputs: `34.13`
+- 10000 inputs: `944.02`
 
 ### References
 - **Source Code**: [https://github.com/NTU-MedAI/S2DV](https://github.com/NTU-MedAI/S2DV)
