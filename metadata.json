@@ -40,6 +40,8 @@
     "License": "Apache-2.0",
     "Contributor": "emmakodes",
     "Incorporation Date": "2023-03-24",
+    "Last Packaging Date": "2025-10-16",
+    "Release": "v1.0.0",
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8lok.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos8lok",
     "Docker Architecture": [
@@ -48,11 +50,11 @@
     ],
     "Model Size": 61.0,
     "Environment Size": 1149.0,
-    "Image Size": 1278.13,
-    "Computational Performance 1": 31.76,
-    "Computational Performance 2": 22.66,
-    "Computational Performance 3": 34.13,
-    "Computational Performance 4": 198.2,
-    "Computational Performance 5": 944.02,
+    "Image Size": 1295.35,
+    "Computational Performance 1": 27.88,
+    "Computational Performance 2": 17.94,
+    "Computational Performance 3": 21.76,
+    "Computational Performance 4": 66.53,
+    "Computational Performance 5": 268.78,
     "Input Shape": "Single"
 }
