@@ -4,6 +4,7 @@ The model uses Word2Vec, a natural language processing technique to represent SM
 
 This model was incorporated on 2023-03-24.
 
+
 ## Information
 ### Identifiers
 - **Ersilia Identifier:** `eos8lok`
@@ -12,7 +13,7 @@ This model was incorporated on 2023-03-24.
 ### Domain
 - **Task:** `Annotation`
 - **Subtask:** `Activity prediction`
-- **Biomedical Area:** `Hepatitis B`
+- **Biomedical Area:** `Hepatitis`
 - **Target Organism:** `Hepatitis B virus`
 - **Tags:** `Antiviral activity`, `IC50`, `HBV`, `ChEMBL`
 
