@@ -2,8 +2,7 @@
 
 The model uses Word2Vec, a natural language processing technique to represent SMILES strings. The model was trained on over <4000 small molecules with associated experimental HBV inhibition data (IC50) to classify compounds as HBV inhibitors (IC50 <= 1 uM) or non-inhibitors. Data was gathered from the public repository ChEMBL.
 
-This model was incorporated on 2023-03-24.
-
+This model was incorporated on 2023-03-24.Last packaged on 2025-10-16.
 
 ## Information
 ### Identifiers
@@ -42,12 +41,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `61`
 - **Environment Size (Mb):** `1149`
-- **Image Size (Mb):** `1278.13`
+- **Image Size (Mb):** `1295.35`
 
 **Computational Performance (seconds):**
-- 10 inputs: `31.76`
-- 100 inputs: `34.13`
-- 10000 inputs: `944.02`
+- 10 inputs: `27.88`
+- 100 inputs: `21.76`
+- 10000 inputs: `268.78`
 
 ### References
 - **Source Code**: [https://github.com/NTU-MedAI/S2DV](https://github.com/NTU-MedAI/S2DV)
