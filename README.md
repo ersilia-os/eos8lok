@@ -2,7 +2,7 @@
 
 The model uses Word2Vec, a natural language processing technique to represent SMILES strings. The model was trained on over <4000 small molecules with associated experimental HBV inhibition data (IC50) to classify compounds as HBV inhibitors (IC50 <= 1 uM) or non-inhibitors. Data was gathered from the public repository ChEMBL.
 
-This model was incorporated on 2023-03-24.Last packaged on 2025-10-16.
+This model was incorporated on 2023-03-24.Last packaged on 2026-03-10.
 
 ## Information
 ### Identifiers
@@ -35,18 +35,18 @@ Below are the **Output Columns** of the model:
 - **Source:** `Local`
 - **Source Type:** `External`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos8lok](https://hub.docker.com/r/ersiliaos/eos8lok)
-- **Docker Architecture:** `AMD64`, `ARM64`
+- **Docker Architecture:** `AMD64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8lok.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8lok.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `61`
 - **Environment Size (Mb):** `1132`
-- **Image Size (Mb):** `1295.35`
+- **Image Size (Mb):** `1297.79`
 
 **Computational Performance (seconds):**
-- 10 inputs: `27.88`
-- 100 inputs: `21.76`
-- 10000 inputs: `268.78`
+- 10 inputs: `28.6`
+- 100 inputs: `22.86`
+- 10000 inputs: `287.14`
 
 ### References
 - **Source Code**: [https://github.com/NTU-MedAI/S2DV](https://github.com/NTU-MedAI/S2DV)
