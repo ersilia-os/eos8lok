@@ -27,18 +27,18 @@ def main(smiles):
 
     #model_root = './model/'
     HepG2_model = pkl.load(
-        open(os.path.join(checkpoints_dir, 'HepG2.ECFP.models.pkl'), 'rb+'))
+        open(os.path.join(checkpoints_dir, 'HepG2.ECFP.models.pkl'), 'rb'))
     HepG2_token = pkl.load(
-        open(os.path.join(checkpoints_dir, 'HepG2_token.pkl'), 'rb+'))
+        open(os.path.join(checkpoints_dir, 'HepG2_token.pkl'), 'rb'))
     HepG2_emb = pkl.load(
-        open(os.path.join(checkpoints_dir, 'HepG2_emb.pkl'), 'rb+'))
+        open(os.path.join(checkpoints_dir, 'HepG2_emb.pkl'), 'rb'))
 
     HBV_model = pkl.load(
-        open(os.path.join(checkpoints_dir, 'HBV.ECFP.models.pkl'), 'rb+'))
+        open(os.path.join(checkpoints_dir, 'HBV.ECFP.models.pkl'), 'rb'))
     HBV_token = pkl.load(
-        open(os.path.join(checkpoints_dir, 'HBV_token.pkl'), 'rb+'))
+        open(os.path.join(checkpoints_dir, 'HBV_token.pkl'), 'rb'))
     HBV_emb = pkl.load(
-        open(os.path.join(checkpoints_dir, 'HBV_emb.pkl'), 'rb+'))
+        open(os.path.join(checkpoints_dir, 'HBV_emb.pkl'), 'rb'))
 
     HBV_vec = get_sentence_vec(ECFP,HBV_emb,HBV_token)
     HBV_prob_predict = vec_predict(HBV_vec,HBV_model,'XGBoost')
