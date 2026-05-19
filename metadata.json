@@ -24,11 +24,10 @@
     "Tag": [
         "Antiviral activity",
         "IC50",
-        "HBV",
         "ChEMBL"
     ],
     "Biomedical Area": [
-        "Hepatitis"
+        "Hepatitis B"
     ],
     "Target Organism": [
         "Hepatitis B virus"
