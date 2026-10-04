@@ -1,6 +1,6 @@
 # Inhibition of Hepatits B virus
 
-The model uses Word2Vec, a natural language processing technique to represent SMILES strings. The model was trained on over <4000 small molecules with associated experimental HBV inhibition data (IC50) to classify compounds as HBV inhibitors (IC50 <= 1 uM) or non-inhibitors. Data was gathered from the public repository ChEMBL.
+Scores small molecules for their ability to suppress hepatitis B virus, a chronic infection where existing therapy rarely achieves cure. The S2DV approach represents SMILES strings through a targeted word2vec model, capturing the relationship between a compound and its fragments before a machine learning classifier is fitted on top. Under 4,000 compounds with measured anti-HBV activity were available. The authors reported wet-lab confirmation of predicted actives, giving the model experimental support beyond retrospective validation.
 
 This model was incorporated on 2023-03-24.Last packaged on 2026-03-10.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2023-03-24.Last packaged on 2026-03-10.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of inhibition of HBV (IC50 < 1uM)
+- **Interpretation:** Probability of hepatitis B virus inhibition, with actives defined at an IC50 below 1 uM.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
