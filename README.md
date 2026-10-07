@@ -2,7 +2,7 @@
 
 Scores small molecules for their ability to suppress hepatitis B virus, a chronic infection that current therapy rarely cures. The S2DV approach embeds SMILES through a targeted word2vec model so that a compound and its substructures occupy one vector space, and a gradient-boosted classifier is fitted on top. Training used 4,411 ChEMBL potency measurements, pooling IC50 and EC50 values. Predictions were then checked against compounds the authors assayed themselves by quantitative PCR in infected cells, giving experimental support beyond retrospective validation.
 
-This model was incorporated on 2023-03-24.Last packaged on 2026-03-10.
+This model was incorporated on 2023-03-24.Last packaged on 2026-10-07.
 
 ## Information
 ### Identifiers
@@ -35,18 +35,18 @@ Below are the **Output Columns** of the model:
 - **Source:** `Local`
 - **Source Type:** `External`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos8lok](https://hub.docker.com/r/ersiliaos/eos8lok)
-- **Docker Architecture:** `AMD64`
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8lok.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8lok.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `61`
 - **Environment Size (Mb):** `1131`
-- **Image Size (Mb):** `1297.79`
+- **Image Size (Mb):** `1329.36`
 
 **Computational Performance (seconds):**
-- 10 inputs: `28.6`
-- 100 inputs: `22.86`
-- 10000 inputs: `287.14`
+- 10 inputs: `23.74`
+- 100 inputs: `17.72`
+- 10000 inputs: `254.34`
 
 ### References
 - **Source Code**: [https://github.com/NTU-MedAI/S2DV](https://github.com/NTU-MedAI/S2DV)
