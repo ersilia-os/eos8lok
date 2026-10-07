@@ -1,6 +1,6 @@
 # Inhibition of Hepatits B virus
 
-Scores small molecules for their ability to suppress hepatitis B virus, a chronic infection where existing therapy rarely achieves cure. The S2DV approach represents SMILES strings through a targeted word2vec model, capturing the relationship between a compound and its fragments before a machine learning classifier is fitted on top. Under 4,000 compounds with measured anti-HBV activity were available. The authors reported wet-lab confirmation of predicted actives, giving the model experimental support beyond retrospective validation.
+Scores small molecules for their ability to suppress hepatitis B virus, a chronic infection that current therapy rarely cures. The S2DV approach embeds SMILES through a targeted word2vec model so that a compound and its substructures occupy one vector space, and a gradient-boosted classifier is fitted on top. Training used 4,411 ChEMBL potency measurements, pooling IC50 and EC50 values. Predictions were then checked against compounds the authors assayed themselves by quantitative PCR in infected cells, giving experimental support beyond retrospective validation.
 
 This model was incorporated on 2023-03-24.Last packaged on 2026-03-10.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2023-03-24.Last packaged on 2026-03-10.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of hepatitis B virus inhibition, with actives defined at an IC50 below 1 uM.
+- **Interpretation:** Probability of hepatitis B virus inhibition, with actives defined at an IC50 or EC50 below 1 uM.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
