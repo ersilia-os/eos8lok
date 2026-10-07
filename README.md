@@ -12,9 +12,9 @@ This model was incorporated on 2023-03-24.Last packaged on 2026-03-10.
 ### Domain
 - **Task:** `Annotation`
 - **Subtask:** `Activity prediction`
-- **Biomedical Area:** `Hepatitis`
+- **Biomedical Area:** `Hepatitis B`
 - **Target Organism:** `Hepatitis B virus`
-- **Tags:** `Antiviral activity`, `IC50`, `HBV`, `ChEMBL`
+- **Tags:** `Antiviral activity`, `IC50`, `ChEMBL`
 
 ### Input
 - **Input:** `Compound`
