@@ -3,7 +3,7 @@ MAINTAINER ersilia
 
 RUN pip install scikit-learn==0.24.2
 RUN pip install xgboost==1.4.1
-RUN pip install rdkit==2022.9.4
+RUN pip install rdkit-pypi==2022.9.4
 
 WORKDIR /repo
 COPY . /repo
