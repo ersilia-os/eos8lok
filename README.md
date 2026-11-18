@@ -2,7 +2,8 @@
 
 Scores small molecules for their ability to suppress hepatitis B virus, a chronic infection that current therapy rarely cures. The S2DV approach embeds SMILES through a targeted word2vec model so that a compound and its substructures occupy one vector space, and a gradient-boosted classifier is fitted on top. Training used 4,411 ChEMBL potency measurements, pooling IC50 and EC50 values. Predictions were then checked against compounds the authors assayed themselves by quantitative PCR in infected cells, giving experimental support beyond retrospective validation.
 
-This model was incorporated on 2023-03-24.Last packaged on 2026-10-07.
+This model was incorporated on 2023-03-24.
+Last packaged on 2026-10-07.
 
 ## Information
 ### Identifiers
@@ -37,6 +38,7 @@ Below are the **Output Columns** of the model:
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos8lok](https://hub.docker.com/r/ersiliaos/eos8lok)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8lok.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8lok.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos8lok_v1.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos8lok_v1.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `61`
